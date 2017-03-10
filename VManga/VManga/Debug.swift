@@ -6,4 +6,12 @@
 //  Copyright © 2017 mac. All rights reserved.
 //
 
-import Foundation
+func debug() {
+
+    SearchManager.search(name: "One piece").then { books -> Void in
+        for book in books {
+            print("\(book.id) \(book.title) \(book.thumbnail)")
+        }
+    }
+    
+}
