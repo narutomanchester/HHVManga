@@ -20,9 +20,13 @@ class HHSearchViews: UIView {
    // @IBOutlet var view: UIView!
     @IBOutlet var view: HHSearchViews!
 
+    @IBOutlet weak var tableview: UITableView!
     
     @IBOutlet weak var searchText: UISearchBar!
 
+    @IBAction func invokeDelete(_ sender: Any) {
+        
+    }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
      
